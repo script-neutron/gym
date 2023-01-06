@@ -31,7 +31,10 @@ const trainers = [
 
 function Trainers() {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
       className="flex items-center justify-center min-h-screen relative max-w-7xl mx-auto"
       id="trainers">
       <div className="w-full">
@@ -47,7 +50,7 @@ function Trainers() {
         </div>
         <Testimonial />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
