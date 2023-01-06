@@ -14,7 +14,7 @@ function Cards({ details }: Props) {
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1 }}
       className="w-full max-w-sm border border-gray-200 rounded-lg shadow-md  dark:border-gray-700 text-center">
       <div className="flex flex-col items-center pb-10">
         <img
